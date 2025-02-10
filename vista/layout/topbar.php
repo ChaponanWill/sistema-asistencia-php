@@ -135,12 +135,12 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right pt-0" aria-labelledby="dd-user-menu">
 
-                                    <h5 class="p-2 text-center bg-primary">Nombre y apellido del usuario</h5>
+                                    <h5 style="padding: 5px;" class="p-2 text-center bg-primary"><?= $_SESSION["nombre"] ." " . $_SESSION["apellido"]; ?></h5>
                                     <a class="dropdown-item" href=""><span class="font-icon glyphicon glyphicon-user"></span>Perfil</a>
                                     <a class="dropdown-item" href=""><span class="font-icon glyphicon glyphicon-lock"></span>Cambiar contraseña</a>
 
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="./login/login.php">
+                                    <a class="dropdown-item" href="../controlador/ctrl_cerrar_sesion.php">
                                         <span class="font-icon glyphicon glyphicon-log-out"></span>salir
                                     </a>
                                 </div>

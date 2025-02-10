@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -21,16 +21,13 @@
             <img src="img/bg.svg">
         </div>
         <div class="login-content">
-            <form method="POST" action="../inicio.php">
+            <form method="POST">
                 <img src="img/avatar.svg">
                 <h2 class="title">BIENVENIDO</h2>
-                <!-- AQUI VA EL MENSAJE DE ERROR -->
-                    <!-- <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
-                        <small>mensaje de error</small>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div> -->                
+                <?php
+                    include "../../modelo/conexion.php"; 
+                    include "../../controlador/login.php";
+                ?>
                 <div class="input-div one">
                     <div class="i">
                         <i class="fas fa-user"></i>
@@ -40,8 +37,6 @@
                         <input id="usuario" type="text"
                             class="input" name="usuario"
                             title="ingrese su nombre de usuario" autocomplete="usuario" value="">
-
-
                     </div>
                 </div>
                 <div class="input-div pass">
@@ -52,19 +47,15 @@
                         <h5>Contraseña</h5>
                         <input type="password" id="input" class="input"
                             name="password" title="ingrese su clave para ingresar" autocomplete="current-password">
-
-
                     </div>
                 </div>
                 <div class="view">
                     <div class="fas fa-eye verPassword" onclick="vista()" id="verPassword"></div>
                 </div>
-
-
                 <div class="text-center">
                     <a class="font-italic isai5" href="">Olvidé mi contraseña</a>
                 </div>
-                <input name="btningresar" class="btn" title="click para ingresar" type="submit"
+                <input name="btnIngresar" class="btn" title="click para ingresar" type="submit" 
                     value="INICIAR SESION">
             </form>
         </div>
