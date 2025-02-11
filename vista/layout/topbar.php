@@ -23,6 +23,7 @@
         <!-- font awesome -->
         <link rel="stylesheet" href="../public/fontawesome/css/all.min.css">
         <link rel="stylesheet" href="../public/fontawesome/css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/c8215784d1.js" crossorigin="anonymous"></script>
 
         <!-- datatables -->
         <link rel="stylesheet" href="../public/app/publico/css/lib/datatables-net/datatables.min.css">
